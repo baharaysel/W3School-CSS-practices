@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables-simple</title>
+    <style>
+        hr {
+            background-color: tomato;
+        }
+        table {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /*border-collapse: collapse;   */
+        }
+        table, table th, table td {
+            border: black solid 1px;
+        }
+        table.fullwidth {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table.fullwidth th {
+            height: 50px;
+        }
+        table.halfwidth {
+            width: 50%;
+            margin-top: 20px;
+        }
+        table.text-align {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            /*or td {text-align:center ;   as th centered and td left aligned by default}*/
+        }
+        table.text-align td, th{
+            height: 30px;
+            vertical-align: bottom;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Aysel</td>
+            <td>Princess</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table class="fullwidth">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Aysel</td>
+            <td>Princess</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table class="halfwidth">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Aysel</td>
+            <td>Princess</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table class="text-align">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Aysel</td>
+            <td>Princess</td>
+            <td>$10599</td>
+        </tr>
+    </table>
+</body>
+</html>

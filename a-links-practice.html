@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links "a"</title>
+    <style>
+        span {
+            margin-left: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        span:hover {
+            background-color: brown;
+        }
+        
+            /* a button*/
+        a:link, a:visited {
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+        /*a:link  a:visited a:hover a:active  it need to be in this order*/
+        a:link {
+            background-color: yellow;
+            text-decoration: none;
+            color: black;            
+        }
+        
+        a:visited  {
+            background-color: cyan;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: lightgreen;
+            text-decoration: underline;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        a:active {
+            background-color: hotpink;
+            text-decoration: overline;
+            /*Note for shorthand font: The font-size and font-family values are required. If one of the other values is missing, their default value are used.*/
+            /*The font property is a shorthand property for:
+
+                font-style
+                font-variant
+                font-weight
+                font-size/line-height
+                font-family*/
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+        #box-link:link, #box-link:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+        }
+        #box-link:hover, #box-link:active {
+            background-color: green;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>CSS Links</h2>
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and  a:visited in the CSS definition in orer to be effective.</p>
+    <a id="box-link" href="practice2.html">This is a link in a box</a>
+    <a id="box-link" href="practice2.html">This is a link in a box</a>
+    <a id="box-link" href="practice2.html">This is a link in a box</a>
+    <br>
+    <br>
+    <p>Mouse over the words to change the cursor.</p>
+    <span style="cursor:auto">auto</span><br>
+    <span style="cursor:crosshair">crosshair</span><br>
+    <span style="cursor:default">default</span><br>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor: wait;">wait</span><br>
+    <span style="cursor: zoom-in;">zoom-in</span><br>
+    <span style="cursor: zoom-out;">zoom-out</span><br>
+    </body>
+</html>

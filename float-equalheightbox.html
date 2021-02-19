@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box {
+            float: left;
+            width: 45%;
+            padding: 50px;
+            background: lightcoral;
+            height: 300px;  
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <title>Title</title>
+    <div class="clearfix">
+        <div class="box">
+            <h2>box1</h2>
+            <p>gjhblkjnkln</p>
+            <p>gkbjlkjml;kmlkm</p>
+        </div>
+        <div class="box">
+            <h2>box2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit a autem laudantium quo in accusamus atque quasi quidem veniam temporibus, unde, aliquid eveniet adipisci voluptatibus magnam suscipit ab, culpa recusandae?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

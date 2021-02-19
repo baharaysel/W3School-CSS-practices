@@ -1,0 +1,65 @@
+/*Learning CSS*/
+* {
+    margin-top:% ;
+    margin-left:%;
+}
+P {
+    color:white;
+    font-size: 500%;
+    border: 5px double springgreen;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.para {
+    color: rgb(157, 165, 42);
+}
+.large {
+    font-size: 300%;
+}
+p.para {
+    font-weight: 900;
+    color: #0d5a64af;
+}
+body {
+    color: bisque;
+    background-image: url(C:/Users/aysel/Desktop/W3School/images/lake-geneva.jpg);
+    background-repeat: no-repeat ;
+    background-position: left top;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+/*---to write all in one
+body {
+    background: url(C:/Users/aysel/Desktop/W3School/images/lake-geneva.jpg) no-repeat left top ;
+}
+*/
+menu {
+    border: aqua solid 2px;
+    /*margin-top: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-style: dotted;
+    border-style: hidden; */
+    margin: auto;
+    padding: 1% 1%;
+    width: auto;
+}
+h1 {
+    display: inline;
+    color: green;
+    font-size: 3rem;
+    margin-right: 13%;
+    padding: 5px;
+    text-align: center;
+    
+} 
+#lorem {
+    border: 5px solid darkgreen;
+    width: 900px;
+    margin: 50px 50px ;
+    padding: 50px;
+    box-sizing: border-box;
+    outline-offset: 50px;
+    outline: 20px dotted green;
+  }

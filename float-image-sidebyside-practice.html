@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image side by side</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear:both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side</p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="./images/img_5terre.jpg" alt="Italy" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="./images/img_forest.jpg" alt="Forest" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="./images/img_mountains.jpg" alt="Mountains" style="width: 100%;">
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sequi? Quas asperiores eius hic molestias laborum! Pariatur, atque harum! Iste ipsum aut illo voluptas incidunt repellat corporis possimus beatae facere?</p>
+</body>
+</html>

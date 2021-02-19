@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        ul.a {
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+        ul.b {
+            list-style-type: square;
+            list-style-position: outside;
+        }
+        ol.c {
+            list-style-type: upper-roman;
+            list-style-position: outside;
+            list-style-position: inside;
+        }
+        ol.d {
+            list-style-type: decimal-leading-zero ;
+        }
+        
+        ul.e {
+            list-style-image: url(./images/greenfieldlogo.small.jpg);
+        }
+        ul.f {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul.g {
+            list-style: square inside url(./images/greenfieldlogo.small.jpg);
+        }
+        ol.h {
+            background: lightpink;
+            padding: 20px;
+        }
+        ol.h li {
+            background: lightseagreen;
+            padding: 5px;
+            margin-left: 35px;
+        }
+        ul.i {
+            background: lightseagreen;
+            padding: 20px;
+        }
+        ul.i li {
+            background: lightpink;
+            padding: 5px ;
+            margin: 5px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Lists</h2>
+    <p>Example of unordered lists</p>
+    <ul class="a">
+        <li>Coffee: kjbklj;olj;omljm <br>bgbkjh</li>
+        <li>Tea: jhklhbnkj <br> mbmbg</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee: hjb <br>kknkh</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <br>
+
+    <p>Example of ordered lists</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <br>
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <hr>
+
+    <h2>CSS Lists</h2>
+    <p>The list-style-image property specifies an image as the list item marker:</p>
+    <ul class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p style="margin: 5px;">How to remove default settings like style,margin and padding </p>
+    <ul class="f">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Shorthand property list-style-type list-style-position list-style-image</p>
+    <ul class="g">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <hr>
+    <h1>Styling Lists With Colors:</h1>
+    <ol class="h">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ul class="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+</body>
+</html>

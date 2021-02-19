@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Images</h1>
+    <p>Float Images</p>
+    <div class="clearfix">
+        <div class="img-container"><img src="./images/img_5terre.jpg" alt=""></div>
+        <div class="img-container"><img src="./images/img_5terre.jpg" alt=""></div>
+        <div class="img-container"><img src="./images/img_5terre.jpg" alt=""></div> 
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore rem consequatur molestiae rerum quis eligendi natus consequuntur voluptates accusamus suscipit fuga obcaecati a aperiam sint sequi nostrum accusantium totam?</p>
+
+    
+</body>
+</html>

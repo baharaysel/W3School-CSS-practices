@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 400px 100px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+        "ar ar ar ar ar as as as"
+        "ft ft ft ft ft ft ft ft";
+        background: lightslategray;
+        border: 2px dotted lightsalmon;
+    }
+    .box {
+    
+        border: 2px dotted #444f44;
+        padding: 5px;
+        margin: 5px;
+        background: lightseagreen;
+    }
+    .header {
+        grid-area: hd;
+    }
+    .article {
+        grid-area: ar;
+    }
+    .aside {
+        grid-area: as;
+    }
+    .footer {
+        grid-area: ft;
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="box header">Header</header>
+        <Article class="box article">Article</Article>
+        <aside class="box aside">Aside</aside>
+        <footer class="box footer">Footer</footer>
+    </div>
+</body>
+</html>

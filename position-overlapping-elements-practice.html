@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Overlapping</title>
+    <style>
+        img {
+            display: block;
+        }
+        img.img1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        border-style: double;
+        }
+        img.lake-geneva {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -2;
+            opacity: 0.6;
+            width: 100%;
+
+        }
+        p {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            font-size: 20;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<h1>This is a heading</h1>
+<img class="img1" src=".\images\w3css.gif" width="100">
+<img class="lake-geneva" src=".\images\lake-geneva.jpg" alt="">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus mollitia minima molestiae deleniti esse? Consequatur eum assumenda facilis quo blanditiis adipisci a eos repellat? Dolor, voluptatum nihil. Ducimus, asperiores suscipit?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse natus asperiores ab enim necessitatibus sequi autem reprehenderit et dolorem iusto dolores cum, aperiam id non quidem, nisi voluptatem beatae!</p>
+</body>
+</html>

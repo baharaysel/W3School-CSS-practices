@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position text in an image</title>
+    <style>
+        img {
+            opacity: 0.5;
+            /* z-index: -1; (it works without it)*/
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            position: relative;
+        }
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        .bottomleft {
+            position: absolute;
+            font-size: 18px;
+            bottom: 8px;
+            left: 16px;
+
+        }
+        .bottomright {
+            position: absolute;
+            font-size: 18px;
+            bottom: 8px;
+            right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Text</h2>
+    <p>Aysel! You are doing really good</p>
+
+    <div class="container">
+        <img src="./images/lake-geneva.jpg" alt="lake" width="100%">
+        <div class="topleft">MENU</div>
+        <div class="topright"><img src="./images/a-image.png" alt="account-mail"></div>
+        <div class="center">
+            <a href="https://goo.gl/maps/b5yYUL7SRx7jAGNA8" target="_parent">Enter</a></div>
+        <Footer class="bottomleft">Footer</Footer>
+        <div class="bottomright">Bottom Right</div>
+    </div>
+</body>
+</html>
