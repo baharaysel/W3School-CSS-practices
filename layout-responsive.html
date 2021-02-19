@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        header {
+            background: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #ddd;
+        }
+        /* it makes main and aside same length desnt include footer,nav and header */
+        .main {
+            display: flex;
+            flex-wrap: nowrap;
+        } 
+        main {
+            float: left;
+            width: 60%;
+        }
+        aside {
+            float: left;
+            width: 30%;
+            background-color: white;
+            padding-left: 20px;
+            margin: 20px;
+            margin-bottom: 0;
+        }
+        .main:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        /* create card effect */
+        article, .aboutme, .popularpost, .followme {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            padding: 5px;
+        }
+        /* try 800px too Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 900px) {
+        main, aside {   
+            width: 100%;
+            padding: 0;
+         
+        }
+        /* it cancel flex and let it be responsive */
+        .main {
+            flex-direction: column;
+        }
+        }
+        /* use400 px  Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        nav a {
+            float: none;
+            width: 100%;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </header>
+    <nav>
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+    </nav>
+    <div class="main">
+        <main>
+            <article>
+                <h2>Title Heading</h2>
+                <h5>Title description, Feb 5, 2021</h5>
+                <img src="./images/pineapple.jpg" alt="" srcset="">
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsa fugiat in, nostrum neque ullam nemo commodi, possimus culpa earum sequi magni dolorem cum libero recusandae ipsum, non ratione! In!</p>
+            </article>
+            <article>
+                <h2>Title Heading</h2>
+                <h5>Title description, Feb 5, 2021</h5>
+                <img src="./images/pineapple.jpg" alt="" srcset="">
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsa fugiat in, nostrum neque ullam nemo commodi, possimus culpa earum sequi magni dolorem cum libero recusandae ipsum, non ratione! In!</p>
+            </article>
+        </main>
+        <aside>
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <img src="./images/img_5terre.jpg" alt="" width=150px>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor quibusdam aut ipsam, quis, ullam quae illo aliquid, quam mollitia commodi minus neque velit earu.</p>
+            </div>
+            <div class="popularpost">
+                <h2>Popular Post</h2>
+                <img src="./images/img_5terre.jpg" alt="" width=150px>
+                <img src="./images/img_5terre.jpg" alt="" width=150px>
+                <img src="./images/img_5terre.jpg" alt="" width=150px>
+            </div>
+            <div class="followme">
+                <p>Some text</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>

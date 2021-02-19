@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+        }
+
+        figure {
+            width: 24%;
+            float: left;
+            padding: 5px;
+            border: 2px solid lightblue;
+            margin: 2px 2px;
+        }
+        
+        
+        @media only screen and (max-width: 700px) {
+            figure {
+                width: 49%;
+                margin: 2px 0;
+            } 
+        }
+        @media only screen and (max-width: 500px) {
+            figure {
+                width: 100%;
+            }
+        }
+        .clearfix::after {
+            content: "";
+            clear:both;
+            display: table;
+    
+
+    </style>
+</head>
+<body>
+    <figure>
+        <a href="./images/img_forest.jpg" target="_blank"><img src="./images/img_forest.jpg" alt="forest"></a>
+        <figcaption>Forest</figcaption>
+    </figure>
+    <figure>
+        <a href="./images/img_forest.jpg" target="_blank"><img src="./images/img_forest.jpg" alt="forest"></a>
+        <figcaption>Forest</figcaption>
+    </figure>
+    <figure>
+        <a href="./images/img_forest.jpg" target="_blank"><img src="./images/img_forest.jpg" alt="forest"></a>
+        <figcaption>Forest</figcaption>
+    </figure>
+    <figure>
+        <a href="./images/img_forest.jpg" target="_blank"><img src="./images/img_forest.jpg" alt="forest"></a>
+        <figcaption>Forest</figcaption>
+    </figure>
+</body>
+</html>

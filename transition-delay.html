@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin: 5px;
+            width: 400px;
+        }
+        #div2 {
+            background-color: black;
+            /* padding: 5px; */
+            margin: 5px;
+            color: white;
+        }
+        button {
+            background-color: green;
+            color: white;
+            /* padding: 5px; */
+            width: 100px;
+            height: 50px;
+        }
+        
+
+        #transition-delay {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 3s;
+            transition-delay: 1s;
+        }
+        #transition-delay:hover {
+            width: 300px
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Delay the Transition Effect</h1>
+    <p>The transition-delay property specifies a delay (in seconds) for the transition effect.</p>
+    <p>The following example has a 1 second delay before starting:</p>
+    <div id="div1">
+        <h2>Example</h2>
+        <div id="div2">
+            <p>div {</p>
+            <p>  transition-delay: 1s;</p>
+            <p>}</p>
+        </div>
+        <button>Try it Yourself</button>
+    </div>
+
+    <br>
+    <h1>Ignore top bit</h1>
+    <h1>The transition-delay Property</h1>
+    <p>hover over the box and be amazed:)</p>
+    <div id="transition-delay">yes hover here</div>
+    <p>Note: The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>

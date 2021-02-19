@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        figure {
+            margin-left: 0px;
+        }
+        figcaption {
+            background-color:lightblue ;
+            overflow: auto;
+            width: 100%;
+        }
+      
+  
+     
+    </style>
+</head>
+<body>
+    <h2>Dropdown Image</h2>
+    <p>Move the mouse over the image and be amazed:)
+    </p>
+
+    <figure class="dropdown">
+        <img src="./images/img_5terre.jpg" alt="Cinque Terre" width="100">
+        <figcaption>Cingue Terre</figcaption>
+        <figure class="dropdown-content">
+            <img class="img-big" src="./images/img_5terre.jpg" alt="" width="300">
+            <figcaption class="desc">Beautiful Cinque Terre</figcaption>
+        </figure>
+    </figure>
+</body>
+</html>

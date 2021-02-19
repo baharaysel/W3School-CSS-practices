@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+            animation-name: example1;
+            animation-duration: 4s;
+        }
+        @keyframes example1 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        }
+        img {
+            animation-name: example2;
+            animation-duration: 5s;
+            position: relative;
+        }
+        @keyframes example2 {
+            0% {transform: rotate(45deg);left: 0px; top: 0px;}
+            20% {transform: rotate(90deg);left: 100px; top: 0px;}
+            40% {transform: rotate(135deg);left: 200px; top: 0px;}
+            60% {transform: rotate(180deg);left: 300px; top: 0px;}
+            80% {transform: rotate(225deg);left: 400px; top: 0px;}
+            90% {transform: rotate(270deg);left: 500px; top: 0px;}
+            95% {transform: rotate(315deg);left: 600px; top: 0px;}
+            100% {transform: rotate(360deg);left: 700px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        animation-name:example;<br>
+        animation-duration: 4s;
+    </div>
+    <br>
+    <img src="./images/snowman.jpg" alt="">
+</body>
+</html>

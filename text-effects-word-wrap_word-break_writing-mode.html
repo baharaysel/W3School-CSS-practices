@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1 {
+            width: 11em;
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
+        .test2 {
+            width: 11em;
+            border: 1px solid black;
+            word-break: keep-all;
+        }
+        .test3 {
+            width: 11em;
+            border: 1px solid black;
+            word-break: break-all;
+        }
+        .test4 {
+            writing-mode: horizontal-tb;
+        }
+        span.test5 {
+            writing-mode: vertical-rl;
+        }
+        p.test5 {
+            writing-mode: vertical-lr;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>The word-wrap Property</h1>
+    <p class="test1">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    <br>
+
+    <h1>The word-break Property</h1>
+    <p class="test2">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p class="test3">This paragraph contains some text. The lines will break at any character.</p>
+    <p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
+    <br>
+
+    <h1>The writing-mode Property</h1>
+    <p class="test4">Some text with default writing-mode.</p>
+    <p>Some text with a span element with a <span class="test5">vertical-rl kgjhlknhhk;nk;kk;k;kkkl</span> writing-mode.</p>
+    <p class="test5">Some text with writing-mode: vertical-lr.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, veritatis fugiat? Sequi impedit totam laudantium repudiandae quam rerum blanditiis cumque ad maiores id rem, libero in iure odio vero voluptatem.
+    </p>
+</body>
+</html>

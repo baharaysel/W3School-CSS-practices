@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                padding: 5px;
+                border: 2px solid lightblue;
+                border-radius: 5px;
+            }
+            h1 {
+                text-align: center;
+            }
+            .box1 {
+                border: 2px solid lightblue;
+                /* display: block;  div is already block element dont need to mention again */
+                padding: 5px;
+                text-align: center;
+                margin: auto;
+                width: 60%;
+                border-radius: 5px;            
+                }
+            .box2 {
+                border: 2px solid lightblue;
+                position: absolute;
+                right: 2px;
+                padding: 10px;
+                width: 200px;
+                top: 0px;
+
+
+            }
+            .box3 {
+                border: 2px solid lightblue;
+                overflow: auto;
+
+            }
+            .img2 {
+                float: right;
+                width: 20%;   
+            }
+    </style>
+</head>
+<body>
+    <h1>Photo</h1>
+    <img src="./images/img_5terre.jpg" alt="">
+    <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eum alias rem adipisci voluptatem deleniti tempora inventore eius distinctio expedita, dolores libero enim. Quos illum recusandae porro! Quo, rerum natus!</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eos, nisi aspernatur provident et dolores? Mollitia sequi nihil debitis molestias, amet nam at totam error, deserunt atque expedita qui doloremque.</p>
+    <div class="box2">Absolute box (it doesn't move with the flow. That's the reason it can overlap with other elements</div>
+    <div class="box3">
+        <img class="img2" src="./images/img_mountains.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis ipsum culpa harum? Nostrum cumque, ullam fuga aliquam tempora cum quis sunt eos non unde expedita voluptas neque accusantium dolores? 
+        </div>
+</body>
+</html>

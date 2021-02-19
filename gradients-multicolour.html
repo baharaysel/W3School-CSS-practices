@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1 {
+            height: 200px;
+            background-image: linear-gradient(red,yellow,green);
+        }
+        #grad2 {
+            height: 200px;
+            background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+        }
+        #grad3 {
+            height: 200px;
+            background-image: linear-gradient(red 10%, green 85%, blue 90%);
+        }
+        #grad4 {
+            text-align:center;
+            margin:auto;
+            color:#888888;
+            font-size:40px;
+            font-weight:bold;
+            height: 55px;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+
+    <h2>3 Color Stops (evenly spaced):</h2>
+    <div id="grad1"></div>
+
+    <h2>7 Color Stops (evenly spaced):</h2>
+    <div id="grad2"></div>
+
+    <h2>3 Color Stops (not evenly spaced):</h2>
+    <div id="grad3"></div>
+
+    <hr>
+    <hr>
+    <div id="grad4">
+        Rainbow Background
+        </div>
+
+</body>
+</html>

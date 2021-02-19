@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+        .container button {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            padding: 16px 30px;
+            font-size: 16px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: none;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button on Image</h1>
+    <div class="container">
+        <img src="./images/bee-yellowflower.jpg" alt="">
+        <button>Button</button>
+    </div>
+</body>
+</html>

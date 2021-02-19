@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #example1 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(./images/flower-meadow.jpg);
+            background-repeat: no-repeat;
+        }
+        #example2 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(./images/flower-meadow.jpg) no-repeat;
+            background-origin: border-box;
+        }
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(./images/flower-meadow.jpg) no-repeat;
+            background-origin: content-box;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>The background-origin Property</h1>
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias architecto vero minima corrupti id excepturi fuga rem quibusdam sequi. Explicabo obcaecati nihil illum debitis sapiente consequuntur ducimus temporibus earum eligendi.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias architecto vero minima corrupti id excepturi fuga rem quibusdam sequi. Explicabo obcaecati nihil illum debitis sapiente consequuntur ducimus temporibus earum eligendi.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias architecto vero minima corrupti id excepturi fuga rem quibusdam sequi. Explicabo obcaecati nihil illum debitis sapiente consequuntur ducimus temporibus earum eligendi.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+</body>
+</html>

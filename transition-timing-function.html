@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            margin-bottom: 20px;
+            transition: width 2s;
+        }
+        #div1 {transition-timing-function: linear;}
+        #div1 {transition-timing-function: ease;}
+        #div1 {transition-timing-function: ease-in;}
+        #div1 {transition-timing-function: ease-out;}
+        #div1 {transition-timing-function: ease-in-out;}
+
+        div:hover {
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Specify the Speed Curve of the Transition</h1>
+    <p>The transition-timing-function property specifies the speed curve of the transition effect.</p>
+    <p>The transition-timing-function property can have the following values:</p>
+    <ul>
+        <li>ease- specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+        <li>linear- specifies a transition effect with the same speed from start to end</li>
+        <li>ease-in - specifies a transition effect with a slow start</li>
+        <li>ease-out - specifies a transition effect with a slow end</li>
+        <li>ease-in-out - specifies a transition effect with a slow start and end</li>
+        <li>ease-in-out - specifies a transition effect with a slow start and end</li>
+    </ul>
+    <p>Hover over box</p>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+</body>
+</html>

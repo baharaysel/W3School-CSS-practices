@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbbbbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: #111111;
+        }
+        .active {
+            background-color: #4caf50;
+        }
+        div {
+            padding: 20px;
+            margin-top: 30px;
+            background-color: gray;
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+      </ul>
+
+      <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate explicabo libero fugit. Delectus laboriosam consequuntur, similique expedita eos rem veritatis. Ducimus officiis consectetur, ipsam assumenda unde sapiente officia nisi.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi suscipit aspernatur, sint reiciendis possimus neque deserunt exercitationem eaque ratione expedita fuga illo nisi labore temporibus quasi. Veritatis, velit temporibus.</p>
+      </div>
+</body>
+</html>

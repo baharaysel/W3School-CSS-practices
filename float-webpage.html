@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header, footer {
+            background-color: grey;
+            color: honeydew;
+            padding: 15px;
+        }
+        aside, article {
+            float: left;
+            padding: 15px;
+        }
+        main::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        aside {
+            width: 25%;
+        }
+        article {
+            width: 75%;
+        }
+        aside ul {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+        }
+        aside li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: hotpink;
+            color: indianred;
+        }
+        aside li:hover {
+            background-color: lightsalmon;
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Turkey</h1></header>
+    <main>
+        <aside>
+            <ul>
+                <li><h2>The Flight</h2></li>
+                <li><h2>The City</h2></li>
+                <li><h2>The Country</h2></li>
+                <li><h2>The Food</h2></li>
+            </ul>
+        </aside>
+        <article>
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eveniet porro rem dolore officiis iste illo id numquam velit similique vitae, quo placeat adipisci reiciendis deleniti fuga commodi! Explicabo, corporis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eveniet porro rem dolore officiis iste illo id numquam velit similique vitae, quo placeat adipisci reiciendis deleniti fuga commodi! Explicabo, corporis.</p>
+            
+        </article>
+    </main>
+    <footer><h4>Footer</h4></footer>
+</body>
+</html>

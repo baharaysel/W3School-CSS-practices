@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* contain */
+        .div1 {
+            border: 5px solid lightcoral;
+            height: 120px;
+            width: 150px;
+            background: url(./images/bee-yellowflower.jpg);
+            background-repeat: no-repeat;
+            background-size: contain ;
+            margin-bottom: 50px;
+        }
+        /* cover */
+        .div2 {
+            border: 5px solid lightcoral;
+            height: 120px;
+            width: 150px;
+            background: url(./images/bee-yellowflower.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+        /* background size not defined */
+        .div3 {
+            border: 5px solid lightcoral;
+            height: 120px;
+            width: 150px;
+            background: url(./images/bee-yellowflower.jpg);
+            background-repeat: no-repeat;
+            
+            margin-bottom: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>background-size: contain:</p>
+    </div>
+    <div class="div2">
+        <p>background-size: cover:</p>
+    </div>
+    <div class="div3">
+        <p>No background-size: defined:</p>
+    </div>
+    
+    <p>Original image:</p>
+    <img src="./images/bee-yellowflower.jpg" alt="">
+    
+</body>
+</html>
